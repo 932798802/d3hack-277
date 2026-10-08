@@ -1,0 +1,71 @@
+﻿---
+Language:        Cpp
+BasedOnStyle: Google
+AlignAfterOpenBracket: BlockIndent
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations:
+  Enabled:         true
+  AcrossEmptyLines: false
+  AcrossComments:  false
+AlignConsecutiveMacros:
+  Enabled:         true
+  AcrossEmptyLines: true
+  AcrossComments:  true
+AlignTrailingComments:
+  Kind:            Always
+  OverEmptyLines:  1
+  # AlignPPAndNotPP: false
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: true
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: true
+BinPackArguments: true
+BinPackParameters: OnePerLine
+BinPackLongBracedList: true
+BreakBeforeBinaryOperators: None
+BreakBeforeBraces: Attach
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: AfterColon
+BreakInheritanceList: AfterColon
+BreakStringLiterals: false
+ColumnLimit: 0
+CommentPragmas: "^ jx pragma:"
+PackConstructorInitializers: NextLine
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
+Cpp11BracedListStyle: true
+ExperimentalAutoDetectBinPacking: true
+FixNamespaceComments: true
+IndentCaseLabels: false
+IndentWidth: 4
+IndentWrappedFunctionNames: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+Macros:
+  - HOOK_DEFINE_INLINE(x)=struct
+  - HOOK_DEFINE_REPLACE(x)=struct
+  - HOOK_DEFINE_TRAMPOLINE(x)=struct
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: All
+PenaltyBreakAssignment: 10
+PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyReturnTypeOnItsOwnLine: 5
+PointerAlignment: Right
+ReflowComments: false
+SortIncludes: false
+SortUsingDeclarations: false
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatementsExceptControlMacros # ControlStatements
+SpaceBeforeRangeBasedForLoopColon: true
+SpacesBeforeTrailingComments: 2
+Standard: Latest
+TabWidth: 4
+WhitespaceSensitiveMacros: ['CRS_PTR', 'FUNC_PTR']
+# TypeNames: [ ctx ]
+# AccessModifierOffset: -3

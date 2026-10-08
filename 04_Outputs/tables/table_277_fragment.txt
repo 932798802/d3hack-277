@@ -1,0 +1,443 @@
+            /* --- 2.7.7.92380 overrides --- */
+            { util::ModuleIndex::Main, 0x480, "sym_main_init" },
+            { util::ModuleIndex::Main, 0x5F0, "patch_local_logging_01_movz" },
+            { util::ModuleIndex::Main, 0x84C, "patch_rom_mount_01_movz" },
+            { util::ModuleIndex::Main, 0xB20, "sym_rawfree" },
+            { util::ModuleIndex::Main, 0xC30, "sym_bdMemory_alloc" },
+            { util::ModuleIndex::Main, 0xC40, "sym_bdMemory_free" },
+            { util::ModuleIndex::Main, 0xC50, "sym_bdMemory_realloc" },
+            { util::ModuleIndex::Main, 0xC60, "sym_bdMemory_aligned_alloc" },
+            { util::ModuleIndex::Main, 0xC70, "sym_bdMemory_aligned_free" },
+            { util::ModuleIndex::Main, 0xC80, "sym_bdMemory_aligned_realloc" },
+            { util::ModuleIndex::Main, 0xF6C, "patch_buildlocker_01_nop" },
+            { util::ModuleIndex::Main, 0xFA4, "patch_buildlocker_03_adrl" },
+            { util::ModuleIndex::Main, 0xFD4, "patch_buildlocker_02_movz" },
+            { util::ModuleIndex::Main, 0x1040, "patch_buildlocker_04_adrl" },
+            { util::ModuleIndex::Main, 0x1088, "patch_buildlocker_06_movz" },
+            { util::ModuleIndex::Main, 0x10C8, "sym_font_string_draw_0010c8" },
+            { util::ModuleIndex::Main, 0x10FC, "patch_buildlocker_07_bytes" },
+            { util::ModuleIndex::Main, 0x1128, "patch_buildlocker_08_bytes" },
+            { util::ModuleIndex::Main, 0x11C0, "patch_buildlocker_10_bytes" },
+            { util::ModuleIndex::Main, 0x1224, "patch_buildlocker_09_nop" },
+            { util::ModuleIndex::Main, 0x1228, "patch_buildlocker_05_adrl" },
+            { util::ModuleIndex::Main, 0x93D0, "sym_GetLocalStorage" },
+            { util::ModuleIndex::Main, 0x3C390, "sym_blz_make_stringf" },
+            { util::ModuleIndex::Main, 0x3C390, "sym_blz_make_stringfb" },
+            { util::ModuleIndex::Main, 0x3CBBC, "patch_resolution_targets_05_movk" },
+            { util::ModuleIndex::Main, 0x3CBCC, "patch_resolution_targets_06_movz" },
+            { util::ModuleIndex::Main, 0x3CBD4, "patch_resolution_targets_07_movk" },
+            { util::ModuleIndex::Main, 0x3CC20, "patch_var_res_label_01_movz" },
+            { util::ModuleIndex::Main, 0x3CC68, "patch_var_res_label_04_adrl" },
+            { util::ModuleIndex::Main, 0x3CC74, "sym_var_res_label" },
+            { util::ModuleIndex::Main, 0x3CC78, "patch_var_res_label_02_movz" },
+            { util::ModuleIndex::Main, 0x3CC7C, "patch_var_res_label_03_movk" },
+            { util::ModuleIndex::Main, 0x3D550, "sym_CGameAsyncRenderFlush" },
+            { util::ModuleIndex::Main, 0x3D570, "sym_CGameAsyncRenderGPUFlush" },
+            { util::ModuleIndex::Main, 0x3E180, "patch_dupe_stub_01_ret" },
+            { util::ModuleIndex::Main, 0x3E530, "patch_ddm_labels_01_movz" },
+            { util::ModuleIndex::Main, 0x3E568, "patch_ddm_labels_02_adrl" },
+            { util::ModuleIndex::Main, 0x3E580, "patch_ddm_labels_03_adrl" },
+            { util::ModuleIndex::Main, 0x3E58C, "patch_ddm_labels_04_adrl" },
+            { util::ModuleIndex::Main, 0x3E594, "patch_ddm_labels_05_movz" },
+            { util::ModuleIndex::Main, 0x3E5B0, "sym_font_string_draw_03e5b0" },
+            { util::ModuleIndex::Main, 0x3F654, "patch_release_fps_label_01_movz" },
+            { util::ModuleIndex::Main, 0x3F69C, "patch_release_fps_label_02_nop" },
+            { util::ModuleIndex::Main, 0x3F6A0, "patch_release_fps_label_03_adrl" },
+            { util::ModuleIndex::Main, 0x3F840, "patch_release_fps_label_04_nop" },
+            { util::ModuleIndex::Main, 0x3F8E4, "patch_release_fps_label_05_nop" },
+            { util::ModuleIndex::Main, 0x3F9A8, "patch_release_fps_label_06_nop" },
+            { util::ModuleIndex::Main, 0x3FA68, "patch_release_fps_label_07_nop" },
+            { util::ModuleIndex::Main, 0x3FB80, "patch_release_fps_label_08_nop" },
+            { util::ModuleIndex::Main, 0x3FC7C, "patch_release_fps_label_09_nop" },
+            { util::ModuleIndex::Main, 0x3FD78, "patch_release_fps_label_10_nop" },
+            { util::ModuleIndex::Main, 0x3FE3C, "patch_ddm_labels_07_adrl" },
+            { util::ModuleIndex::Main, 0x3FE78, "patch_ddm_labels_06_movz" },
+            { util::ModuleIndex::Main, 0x3FEE8, "sym_font_string_get_rendered_size" },
+            { util::ModuleIndex::Main, 0x3FF18, "patch_ddm_labels_08_adrl" },
+            { util::ModuleIndex::Main, 0x3FF20, "patch_ddm_labels_10_movz" },
+            { util::ModuleIndex::Main, 0x3FF28, "patch_ddm_labels_09_adrl" },
+            { util::ModuleIndex::Main, 0x3FF50, "sym_font_string_draw_03ff50" },
+            { util::ModuleIndex::Main, 0x42E30, "sym_scheck_gfx_ready" },
+            { util::ModuleIndex::Main, 0x4EDC0, "sym_ChallengeRiftRewardEarned_SaveToProfile" },
+            { util::ModuleIndex::Main, 0x56790, "sym_GetPrimaryProfileUserIndex" },
+            { util::ModuleIndex::Main, 0x56B10, "patch_signin_01_movz" },
+            { util::ModuleIndex::Main, 0x56B14, "patch_signin_02_ret" },
+            { util::ModuleIndex::Main, 0x574E0, "sym_ConsoleGamerProfileGetAccount" },
+            { util::ModuleIndex::Main, 0x5FF0C, "patch_dynamic_seasonal_04_movz" },
+            { util::ModuleIndex::Main, 0x6065C, "sym_lobby_service_create" },
+            { util::ModuleIndex::Main, 0x60810, "sym_lobby_service_idle_internal" },
+            { util::ModuleIndex::Main, 0x61620, "patch_hideonline_02_movz" },
+            { util::ModuleIndex::Main, 0x61624, "patch_hideonline_03_ret" },
+            { util::ModuleIndex::Main, 0x641F0, "sym_OnConfigFileRetrieved" },
+            { util::ModuleIndex::Main, 0x65270, "sym_OnSeasonsFileRetrieved" },
+            { util::ModuleIndex::Main, 0x657F0, "sym_OnBlacklistFileRetrieved" },
+            { util::ModuleIndex::Main, 0x66690, "sym_blz_basic_string" },
+            { util::ModuleIndex::Main, 0x66690, "sym_blz_string_ctor" },
+            { util::ModuleIndex::Main, 0x66B10, "sym_StorageGetPublisherFile" },
+            { util::ModuleIndex::Main, 0x6A2A8, "sym_pubfile_data_hex" },
+            { util::ModuleIndex::Main, 0xB7DCC, "hook_lobby_new_player_msg_000b7dcc" },
+            { util::ModuleIndex::Main, 0xB8740, "sym_LocalPlayerGet" },
+            { util::ModuleIndex::Main, 0xBB5E8, "sym_floating_dmg" },
+            { util::ModuleIndex::Main, 0xBF070, "patch_item_manipulated_01_branch" },
+            { util::ModuleIndex::Main, 0xBF630, "sym_request_drop_item" },
+            { util::ModuleIndex::Main, 0xC8000, "sym_move_speed" },
+            { util::ModuleIndex::Main, 0xE7640, "sym_nx64_nvn_heap_early_init" },
+            { util::ModuleIndex::Main, 0xE7858, "patch_resolution_targets_01_movz" },
+            { util::ModuleIndex::Main, 0xE785C, "patch_resolution_targets_03_movz" },
+            { util::ModuleIndex::Main, 0xE7860, "patch_resolution_targets_02_movk" },
+            { util::ModuleIndex::Main, 0xE7864, "patch_resolution_targets_04_movk" },
+            { util::ModuleIndex::Main, 0xEBAC0, "sym_get_render_target_current_resolution" },
+            { util::ModuleIndex::Main, 0xEF300, "sym_nx64_nvn_heap_add_pool" },
+            { util::ModuleIndex::Main, 0xF2BB0, "sym_sReadFile" },
+            { util::ModuleIndex::Main, 0x185AA0, "sym_print_challenge_rift_failed" },
+            { util::ModuleIndex::Main, 0x185F70, "sym_challenge_rift_callback" },
+            { util::ModuleIndex::Main, 0x185F70, "sym_sOnGetChallengeRiftData" },
+            { util::ModuleIndex::Main, 0x1B0600, "sym_MailCheckLobbyConnection" },
+            { util::ModuleIndex::Main, 0x1BD030, "sym_set_game_params_for_hero" },
+            { util::ModuleIndex::Main, 0x1BD140, "patch_dynamic_seasonal_05_movz" },
+            { util::ModuleIndex::Main, 0x1BF5F0, "patch_dynamic_seasonal_08_movz" },
+            { util::ModuleIndex::Main, 0x1BF5F4, "patch_dynamic_seasonal_09_ret" },
+            { util::ModuleIndex::Main, 0x1DCFA4, "patch_cheat_instant_enchant_01_add_imm" },
+            { util::ModuleIndex::Main, 0x1E0DF0, "sym_DisplaySeasonEndingMessage" },
+            { util::ModuleIndex::Main, 0x1E0F60, "sym_DisplayLongMessageForPlayer" },
+            { util::ModuleIndex::Main, 0x20636C, "patch_cheat_instant_identify_01_nop" },
+            { util::ModuleIndex::Main, 0x221324, "patch_hideonline_08_movz" },
+            { util::ModuleIndex::Main, 0x221338, "patch_hideonline_09_movz" },
+            { util::ModuleIndex::Main, 0x221378, "patch_hideonline_10_bytes" },
+            { util::ModuleIndex::Main, 0x22137C, "patch_hideonline_11_movz" },
+            { util::ModuleIndex::Main, 0x236D20, "patch_cheat_cube_instant_craft_01_movz" },
+            { util::ModuleIndex::Main, 0x236D24, "patch_cheat_cube_instant_craft_02_movz" },
+            { util::ModuleIndex::Main, 0x236D28, "patch_cheat_cube_instant_craft_03_movz" },
+            { util::ModuleIndex::Main, 0x236D30, "patch_cheat_cube_instant_craft_04_movz" },
+            { util::ModuleIndex::Main, 0x276A60, "patch_resolution_targets_08_movz" },
+            { util::ModuleIndex::Main, 0x276A6C, "patch_resolution_targets_09_movz" },
+            { util::ModuleIndex::Main, 0x298BD0, "sym_gfx_init" },
+            { util::ModuleIndex::Main, 0x299910, "sym_GfxForceDeviceReset" },
+            { util::ModuleIndex::Main, 0x299FE0, "sym_GfxDeviceReset" },
+            { util::ModuleIndex::Main, 0x29B0E0, "sym_GfxWindowChangeDisplayMode" },
+            { util::ModuleIndex::Main, 0x29B1E0, "sym_GfxGetDesiredDisplayMode" },
+            { util::ModuleIndex::Main, 0x335B78, "patch_autosave_string_01_adrl" },   // was 0x335B68
+            { util::ModuleIndex::Main, 0x335C28, "patch_autosave_wait_01_nop" },   // was 0x335C18
+            { util::ModuleIndex::Main, 0x349BA8, "patch_cheat_gem_speed_01_bytes" },   // was 0x349B98
+            { util::ModuleIndex::Main, 0x34BEE0, "sym_SetUICConversionConstansts" },   // was 0x34BED0
+            { util::ModuleIndex::Main, 0x34C8E0, "sym_FormatTruncatedNumber" },   // was 0x34C8D0
+            { util::ModuleIndex::Main, 0x351CCC, "patch_dynamic_seasonal_03_movz" },   // was 0x351CBC
+            { util::ModuleIndex::Main, 0x358A8C, "patch_dynamic_seasonal_06_nop" },   // was 0x358A7C
+            { util::ModuleIndex::Main, 0x35C0D4, "patch_dynamic_seasonal_07_movz" },   // was 0x35C0C4
+            { util::ModuleIndex::Main, 0x35C1B0, "patch_hideonline_01_branch" },   // was 0x35C1A0
+            { util::ModuleIndex::Main, 0x3627FC, "patch_hideonline_04_movz" },   // was 0x3627EC
+            { util::ModuleIndex::Main, 0x362810, "patch_hideonline_05_movz" },   // was 0x362800
+            { util::ModuleIndex::Main, 0x362850, "patch_hideonline_06_bytes" },   // was 0x362840
+            { util::ModuleIndex::Main, 0x362854, "patch_hideonline_07_movz" },   // was 0x362844
+            { util::ModuleIndex::Main, 0x3656C8, "patch_start_string_01_adrl" },   // was 0x3656B8
+            { util::ModuleIndex::Main, 0x369394, "patch_itemcandrop_01_bytes" },   // was 0x369384
+            { util::ModuleIndex::Main, 0x3A7418, "hook_debug_font_snoop_003a73a8" },   // was 0x3A73A8
+            { util::ModuleIndex::Main, 0x3A7418, "sym_font_snoop" },   // was 0x3A73A8
+            { util::ModuleIndex::Main, 0x40FA20, "patch_cheat_instant_craft_01_add_imm" },   // was 0x40F9B0
+            { util::ModuleIndex::Main, 0x46FB20, "sym_ACD_AttributesGetInt" },   // was 0x46FAB0
+            { util::ModuleIndex::Main, 0x46FB30, "sym_ACD_AttributesGetFloat" },   // was 0x46FAC0
+            { util::ModuleIndex::Main, 0x46FB80, "sym_ACD_AttributesSetFloat" },   // was 0x46FB10
+            { util::ModuleIndex::Main, 0x46FC00, "sym_ACD_AttributesSetInt" },   // was 0x46FB90
+            { util::ModuleIndex::Main, 0x47AD7C, "patch_infinite_mp_01_resource_bl" },   // was 0x47AD0C
+            { util::ModuleIndex::Main, 0x47FFB0, "sym_ACD_ModifyCurrencyAmount" },   // was 0x47FF40
+            { util::ModuleIndex::Main, 0x480230, "sym_ACD_SetCurrencyAmount" },   // was 0x4801C0
+            { util::ModuleIndex::Main, 0x4811D0, "patch_dupe_stub_02_ret" },   // was 0x481160
+            { util::ModuleIndex::Main, 0x483D70, "patch_dupe_stub_03_ret" },   // was 0x483D00
+            { util::ModuleIndex::Main, 0x483DE0, "sym_ClearAssignedHero" },   // was 0x483D70
+            { util::ModuleIndex::Main, 0x487454, "patch_cheat_gr150_01_bytes" },   // was 0x4873E4
+            { util::ModuleIndex::Main, 0x488C10, "hook_lobby_return_true_00488ba0" },   // was 0x488BA0
+            { util::ModuleIndex::Main, 0x488F30, "hook_lobby_return_true_00488ec0" },   // was 0x488EC0
+            { util::ModuleIndex::Main, 0x489280, "sym_ACDInventoryItemAllowedInSlot" },   // was 0x489210
+            { util::ModuleIndex::Main, 0x48E980, "sym_ACDAddToInventory" },   // was 0x48E910
+            { util::ModuleIndex::Main, 0x490F90, "sym_SACDInventoryPickupOrSpillOntoGround" },   // was 0x490F20
+            { util::ModuleIndex::Main, 0x4A7CD8, "patch_dynamic_events_01_movz" },   // was 0x4A7BD8
+            { util::ModuleIndex::Main, 0x4A7D04, "patch_dynamic_events_02_movz" },   // was 0x4A7C04
+            { util::ModuleIndex::Main, 0x4A7D30, "patch_dynamic_events_03_movz" },   // was 0x4A7C30
+            { util::ModuleIndex::Main, 0x4A7D5C, "patch_dynamic_events_04_movz" },   // was 0x4A7C5C
+            { util::ModuleIndex::Main, 0x4A7D88, "patch_dynamic_events_05_movz" },   // was 0x4A7C88
+            { util::ModuleIndex::Main, 0x4A7DB4, "patch_dynamic_events_06_movz" },   // was 0x4A7CB4
+            { util::ModuleIndex::Main, 0x4A7DE0, "patch_dynamic_events_07_movz" },   // was 0x4A7CE0
+            { util::ModuleIndex::Main, 0x4A7E0C, "patch_dynamic_events_08_movz" },   // was 0x4A7D0C
+            { util::ModuleIndex::Main, 0x4A7E38, "patch_dynamic_events_09_movz" },   // was 0x4A7D38
+            { util::ModuleIndex::Main, 0x4A7E64, "patch_dynamic_events_10_movz" },   // was 0x4A7D64
+            { util::ModuleIndex::Main, 0x4A7E90, "patch_dynamic_events_11_movz" },   // was 0x4A7D90
+            { util::ModuleIndex::Main, 0x4A7EBC, "patch_dynamic_events_12_movz" },   // was 0x4A7DBC
+            { util::ModuleIndex::Main, 0x4A7EE8, "patch_dynamic_events_13_movz" },   // was 0x4A7DE8
+            { util::ModuleIndex::Main, 0x4A7F14, "patch_dynamic_events_14_movz" },   // was 0x4A7E14
+            { util::ModuleIndex::Main, 0x4A7F40, "patch_dynamic_events_15_movz" },   // was 0x4A7E40
+            { util::ModuleIndex::Main, 0x4A7F6C, "patch_dynamic_events_16_movz" },   // was 0x4A7E6C
+            { util::ModuleIndex::Main, 0x4A7F98, "patch_dynamic_events_17_movz" },   // was 0x4A7E98
+            { util::ModuleIndex::Main, 0x4A7FC4, "patch_dynamic_events_19_movz" },   // was 0x4A7EC4
+            { util::ModuleIndex::Main, 0x4A7FF4, "patch_dynamic_events_18_movz" },   // was 0x4A7EF4
+            { util::ModuleIndex::Main, 0x4B114C, "hook_debug_count_cosmetics_004b104c" },   // was 0x4B104C
+            { util::ModuleIndex::Main, 0x4B114C, "sym_count_cosmetics" },   // was 0x4B104C
+            { util::ModuleIndex::Main, 0x4B1790, "sym_GetCosmeticItemType" },   // was 0x4B1690
+            { util::ModuleIndex::Main, 0x4C4AD0, "sym_AppDrawFlagSet" },   // was 0x4C49D0
+            { util::ModuleIndex::Main, 0x4C4C20, "sym_GameActiveGameCommonDataIsServer" },   // was 0x4C4B20
+            { util::ModuleIndex::Main, 0x4C4CA0, "sym_GameServerCodeLeave_Tracked" },   // was 0x4C4BA0
+            { util::ModuleIndex::Main, 0x4C4EF0, "sym__GameServerCodeEnter" },   // was 0x4C4DF0
+            { util::ModuleIndex::Main, 0x4C79D0, "sym_GameGetParts" },   // was 0x4C78D0
+            { util::ModuleIndex::Main, 0x4C7DF0, "sym_GameIsStartUp" },   // was 0x4C7CF0
+            { util::ModuleIndex::Main, 0x4C7E80, "sym_ServerIsLocal" },   // was 0x4C7D80
+            { util::ModuleIndex::Main, 0x4C8C10, "sym_GameRandRangeInt" },   // was 0x4C8B10
+            { util::ModuleIndex::Main, 0x4C8DF0, "sym_GameIsSeasonal" },   // was 0x4C8CF0
+            { util::ModuleIndex::Main, 0x4CACA0, "sym_game_common_data_init" },   // was 0x4CABA0
+            { util::ModuleIndex::Main, 0x4CADB8, "patch_dynamic_seasonal_10_nop" },   // was 0x4CACB8
+            { util::ModuleIndex::Main, 0x4E5F50, "sym_GlobalSNOGet" },   // was 0x4E5E50
+            { util::ModuleIndex::Main, 0x4F45F0, "sym_ItemHasLabel" },   // was 0x4F44F0
+            { util::ModuleIndex::Main, 0x4F99DC, "patch_cheat_auto_pickup_01_nop" },   // was 0x4F98DC
+            { util::ModuleIndex::Main, 0x4FA01C, "patch_cheat_any_gem_any_slot_01_movz" },   // was 0x4F9F1C
+            { util::ModuleIndex::Main, 0x4FA024, "patch_cheat_any_gem_any_slot_02_branch" },   // was 0x4F9F24
+            { util::ModuleIndex::Main, 0x4FBAE4, "patch_cheat_multi_legendary_01_branch" },   // was 0x4FB9E4
+            { util::ModuleIndex::Main, 0x4FC220, "sym_SetBindingLevel" },   // was 0x4FC120
+            { util::ModuleIndex::Main, 0x4FC3E0, "sym_SetRecipient" },   // was 0x4FC2E0
+            { util::ModuleIndex::Main, 0x4FF420, "sym_PopulateGenerator" },   // was 0x4FF320
+            { util::ModuleIndex::Main, 0x500000, "sym_CItemGenerate" },   // was 0x4FFF00
+            { util::ModuleIndex::Main, 0x5000E4, "patch_cheat_testing_cosmetics_01_cmn_imm" },   // was 0x4FFFE4
+            { util::ModuleIndex::Main, 0x504CC0, "sym_ItemIsCosmeticItem" },   // was 0x504BC0
+            { util::ModuleIndex::Main, 0x504D78, "patch_cheat_drop_anything_01_movn" },   // was 0x504C78
+            { util::ModuleIndex::Main, 0x504FE0, "hook_lobby_return_true_00504ee0" },   // was 0x504EE0
+            { util::ModuleIndex::Main, 0x505880, "sym_sGetItemTypeString" },   // was 0x505780
+            { util::ModuleIndex::Main, 0x51D0F0, "sym_PlayerGetHeroDisplayName" },   // was 0x51CFF0
+            { util::ModuleIndex::Main, 0x51F8C0, "sym_PlayerGetFirstAll" },   // was 0x51F7C0
+            { util::ModuleIndex::Main, 0x51F970, "sym_PlayerGetNextAll" },   // was 0x51F870
+            { util::ModuleIndex::Main, 0x51FD40, "sym_PlayerGetByACD" },   // was 0x51FC40
+            { util::ModuleIndex::Main, 0x5203C0, "sym_PlayerGetFirstInGame" },   // was 0x5202C0
+            { util::ModuleIndex::Main, 0x5212F0, "sym_PlayerGetByPlayerIndex" },   // was 0x5211F0
+            { util::ModuleIndex::Main, 0x527AE0, "sym_GetPrimaryPlayerForGameConnection" },   // was 0x5279E0
+            { util::ModuleIndex::Main, 0x5282B0, "patch_handicap_unlock_01_movz" },   // was 0x5281B0
+            { util::ModuleIndex::Main, 0x5282B4, "patch_handicap_unlock_02_ret" },   // was 0x5281B4
+            { util::ModuleIndex::Main, 0x564D00, "sym_ChallengeData_ctor" },   // was 0x564C00
+            { util::ModuleIndex::Main, 0x60CCC0, "sym_ItemsGenerator_ctor" },   // was 0x60CBC0
+            { util::ModuleIndex::Main, 0x60D350, "sym_ItemsGenerator_dtor" },   // was 0x60D250
+            { util::ModuleIndex::Main, 0x62ABE0, "sym_WeeklyChallengeData_ctor" },   // was 0x62AAE0
+            { util::ModuleIndex::Main, 0x667930, "sym_shell_initialize" },   // was 0x667830
+            { util::ModuleIndex::Main, 0x6679B8, "patch_resolution_targets_10_movz" },   // was 0x6678B8
+            { util::ModuleIndex::Main, 0x6679C8, "patch_resolution_targets_12_movz" },   // was 0x6678C8
+            { util::ModuleIndex::Main, 0x667BE8, "patch_resolution_targets_11_movz" },   // was 0x667AE8
+            { util::ModuleIndex::Main, 0x667C04, "patch_resolution_targets_13_movz" },   // was 0x667B04
+            { util::ModuleIndex::Main, 0x669CB0, "sym_ACDTryToGet" },   // was 0x669BB0
+            { util::ModuleIndex::Main, 0x69B010, "sym_KeyGetDataType" },   // was 0x69AF10
+            { util::ModuleIndex::Main, 0x69B1D0, "sym_AttribStringToParam" },   // was 0x69B0D0
+            { util::ModuleIndex::Main, 0x69B330, "sym_AttribParamToString" },   // was 0x69B230
+            { util::ModuleIndex::Main, 0x69BAE0, "hook_debug_store_attrib_defs_0069b9e0" },   // was 0x69B9E0
+            { util::ModuleIndex::Main, 0x69BAE0, "sym_store_attrib_defs" },   // was 0x69B9E0
+            { util::ModuleIndex::Main, 0x69F5E0, "sym_FastAttribGetValueInt" },   // was 0x69F4E0
+            { util::ModuleIndex::Main, 0x69F680, "sym_FastAttribGetValueFloat" },   // was 0x69F580
+            { util::ModuleIndex::Main, 0x69FCE0, "sym_FastAttribToString" },   // was 0x69FBE0
+            { util::ModuleIndex::Main, 0x6A0250, "sym_KeyGetParamType" },   // was 0x6A0150
+            { util::ModuleIndex::Main, 0x6A265C, "patch_cheat_gem_upgrade_01_bytes" },   // was 0x6A255C
+            { util::ModuleIndex::Main, 0x6A3E80, "sym_SetCraftLevel" },   // was 0x6A3D80
+            { util::ModuleIndex::Main, 0x6A4B20, "sym_Crafting_GetTransmogSlot" },   // was 0x6A4A20
+            { util::ModuleIndex::Main, 0x6B5484, "hook_debug_print_saved_attribs_006b5384" },   // was 0x6B5384
+            { util::ModuleIndex::Main, 0x6B5484, "sym_print_saved_attribs" },   // was 0x6B5384
+            { util::ModuleIndex::Main, 0x6CA4F0, "sym_GBIDToStringAll" },   // was 0x6CA3F0
+            { util::ModuleIndex::Main, 0x6CB880, "sym_GBEnumerate" },   // was 0x6CB780
+            { util::ModuleIndex::Main, 0x6CBD70, "sym_GBIDToString" },   // was 0x6CBC70
+            { util::ModuleIndex::Main, 0x6CBDA0, "sym_GBGetHandlePool" },   // was 0x6CBCA0
+            { util::ModuleIndex::Main, 0x6CC700, "sym_attack_speed" },   // was 0x6CC600
+            { util::ModuleIndex::Main, 0x6F1580, "sym_StringListFetchLPCSTR" },   // was 0x6F1480
+            { util::ModuleIndex::Main, 0x719110, "sym_GetGameMessageTypeAndSize" },   // was 0x719010
+            { util::ModuleIndex::Main, 0x71DB90, "sym_MessageSendToClient" },   // was 0x71DA90
+            { util::ModuleIndex::Main, 0x72E090, "sym_OnlineServiceGetSeasonNum" },   // was 0x72DF90
+            { util::ModuleIndex::Main, 0x72E0A0, "sym_OnlineServiceGetSeasonState" },   // was 0x72DFA0
+            { util::ModuleIndex::Main, 0x72EE98, "patch_dynamic_seasonal_01_movz" },   // was 0x72ED98
+            { util::ModuleIndex::Main, 0x72EED0, "patch_dynamic_seasonal_02_movz" },   // was 0x72EDD0
+            { util::ModuleIndex::Main, 0x7397D0, "patch_cheat_no_cooldowns_01_bytes" },   // was 0x7396D0
+            { util::ModuleIndex::Main, 0x74A610, "sym_SNOToString" },   // was 0x74A510
+            { util::ModuleIndex::Main, 0x758100, "sym_cmd_line_parse" },   // was 0x758000
+            { util::ModuleIndex::Main, 0x758F40, "sym_CmdLineGetParams" },   // was 0x758E40
+            { util::ModuleIndex::Main, 0x775CD0, "sym_ChallengeRiftHandleChallengeRewards" },   // was 0x775BD0
+            { util::ModuleIndex::Main, 0x776350, "sym_OpenChallengeRift" },   // was 0x776250
+            { util::ModuleIndex::Main, 0x7764E0, "sym_ChallengeRiftGrantRewardToPlayerIfEligible" },   // was 0x7763E0
+            { util::ModuleIndex::Main, 0x7A1C00, "sym_ExperienceDropLootForAll" },   // was 0x7A1B00
+            { util::ModuleIndex::Main, 0x7A1E80, "sym_ExperienceSetLevel" },   // was 0x7A1D80
+            { util::ModuleIndex::Main, 0x7A34A0, "sym_FlippyFindLandingLocation" },   // was 0x7A33A0
+            { util::ModuleIndex::Main, 0x7A4B00, "sym_FlippyDropCreateOnActor" },   // was 0x7A4A00
+            { util::ModuleIndex::Main, 0x7A6430, "sym_PlayerList_ctor" },   // was 0x7A6330
+            { util::ModuleIndex::Main, 0x7A6620, "sym_PlayerListGetElementPool" },   // was 0x7A6520
+            { util::ModuleIndex::Main, 0x7A6950, "sym_PlayerListGetAllInGame" },   // was 0x7A6850
+            { util::ModuleIndex::Main, 0x7A6CF0, "sym_PlayerListGetSingle" },   // was 0x7A6BF0
+            { util::ModuleIndex::Main, 0x7B09A0, "sym_sgame_initialize" },   // was 0x7B08A0
+            { util::ModuleIndex::Main, 0x7B19B8, "hook_lobby_sgame_get_007b18b8" },   // was 0x7B18B8
+            { util::ModuleIndex::Main, 0x7B1D50, "patch_trace_stat_path_01_adrl" },   // was 0x7B1C50
+            { util::ModuleIndex::Main, 0x7B2990, "sym_SGameGlobalsGet" },   // was 0x7B2890
+            { util::ModuleIndex::Main, 0x7B72D0, "patch_dupe_stub_04_ret" },   // was 0x7B71D0
+            { util::ModuleIndex::Main, 0x7B88D0, "sym_AppServerGetOnlyGame" },   // was 0x7B87D0
+            { util::ModuleIndex::Main, 0x7C2D50, "sym_SCosmeticItems_LearnCosmeticItem" },   // was 0x7C2C50
+            { util::ModuleIndex::Main, 0x7C3050, "sym_SCosmeticItems_LearnPet" },   // was 0x7C2F50
+            { util::ModuleIndex::Main, 0x7DE2E0, "sym_SItemGenerate" },   // was 0x7DE1E0
+            { util::ModuleIndex::Main, 0x7DFA58, "patch_cheat_gem_lvl150_05_bytes" },   // was 0x7DF958
+            { util::ModuleIndex::Main, 0x7E03B0, "sym_SItemPlayerExtractLegendaryPower" },   // was 0x7E02B0
+            { util::ModuleIndex::Main, 0x7EAD18, "hook_lobby_store_player_pointers_007eac18" },   // was 0x7EAC18
+            { util::ModuleIndex::Main, 0x7F8A60, "patch_cheat_no_cooldowns_02_bytes" },   // was 0x7F8960
+            { util::ModuleIndex::Main, 0x7FD4F0, "sym_SPlayerIsLocal" },   // was 0x7FD3F0
+            { util::ModuleIndex::Main, 0x802800, "sym_AddItemToInventory" },   // was 0x802700
+            { util::ModuleIndex::Main, 0x802A44, "patch_dupe_noequip_01_nop" },   // was 0x802944
+            { util::ModuleIndex::Main, 0x8128A0, "sym_sinitialize_world" },   // was 0x8127A0
+            { util::ModuleIndex::Main, 0x844CE4, "patch_cheat_extra_gr_orbs_elites_01_movz" },   // was 0x844BE4
+            { util::ModuleIndex::Main, 0x86E070, "sym_ActorGet" },   // was 0x86DF70
+            { util::ModuleIndex::Main, 0x86F940, "sym_ActorFlagSet" },   // was 0x86F840
+            { util::ModuleIndex::Main, 0x87FF40, "sym_SItemCrafting_TryUnlockTransmog" },   // was 0x87FE40
+            { util::ModuleIndex::Main, 0x880C40, "sym_SItemCrafting_TryUnlockSecondaryTmogs" },   // was 0x880B40
+            { util::ModuleIndex::Main, 0x884A30, "sym_SCrafterIncrementLevel" },   // was 0x884930
+            { util::ModuleIndex::Main, 0x884B50, "sym_SItemCrafting_LearnRecipe" },   // was 0x884A50
+            { util::ModuleIndex::Main, 0x886E70, "sym_sCrafterOnLevelUp" },   // was 0x886D70
+            { util::ModuleIndex::Main, 0x8875D0, "patch_cheat_cube_no_consume_01_ret" },   // was 0x8874D0
+            { util::ModuleIndex::Main, 0x88DEE0, "sym_LootRollForAncientLegendary" },   // was 0x88DDE0
+            { util::ModuleIndex::Main, 0x88DEFC, "patch_cheat_primal_01_branch" },   // was 0x88DDFC
+            { util::ModuleIndex::Main, 0x88DF58, "patch_cheat_primal_02_movz" },   // was 0x88DE58
+            { util::ModuleIndex::Main, 0x88E010, "patch_cheat_primal_03_bytes" },   // was 0x88DF10
+            { util::ModuleIndex::Main, 0x88E0E0, "patch_cheat_primal_05_bytes" },   // was 0x88DFE0
+            { util::ModuleIndex::Main, 0x88E0FC, "patch_cheat_primal_04_bytes" },   // was 0x88DFFC
+            { util::ModuleIndex::Main, 0x88F92C, "patch_cheat_guaranteed_legendaries_01_nop" },   // was 0x88F82C
+            { util::ModuleIndex::Main, 0x88F934, "patch_cheat_guaranteed_legendaries_02_nop" },   // was 0x88F834
+            { util::ModuleIndex::Main, 0x88F93C, "patch_cheat_guaranteed_legendaries_03_branch" },   // was 0x88F83C
+            { util::ModuleIndex::Main, 0x88FAC4, "patch_cheat_guaranteed_legendaries_04_nop" },   // was 0x88F9C4
+            { util::ModuleIndex::Main, 0x88FAE0, "patch_cheat_guaranteed_legendaries_05_branch" },   // was 0x88F9E0
+            { util::ModuleIndex::Main, 0x890B10, "sym_LootQuickCreateItem" },   // was 0x890A10
+            { util::ModuleIndex::Main, 0x8951B0, "sym_specifiers_from_modifier" },   // was 0x8950B0
+            { util::ModuleIndex::Main, 0x896908, "sym_eval_mod" },   // was 0x896808
+            { util::ModuleIndex::Main, 0x933FD0, "sym_PlayerIsPrimary" },   // was 0x933ED0
+            { util::ModuleIndex::Main, 0x933FF0, "sym_DisplayGameMessageForAllPlayers" },   // was 0x933EF0
+            { util::ModuleIndex::Main, 0x93DBF0, "sym_GetPrimaryPlayer" },   // was 0x93DAF0
+            { util::ModuleIndex::Main, 0x9622D0, "sym_ServerGetOnlyGameConnection" },   // was 0x9621D0
+            { util::ModuleIndex::Main, 0x962C10, "patch_trace_message_01_ret" },   // was 0x962B10
+            { util::ModuleIndex::Main, 0x97F65C, "patch_easykill_01_movz" },   // was 0x97F55C
+            { util::ModuleIndex::Main, 0x97F660, "patch_easykill_02_movk" },   // was 0x97F560
+            { util::ModuleIndex::Main, 0x9BC63C, "patch_cheat_no_cooldowns_03_bytes" },   // was 0x9BC53C
+            { util::ModuleIndex::Main, 0x9BC928, "patch_cheat_no_cooldowns_04_bytes" },   // was 0x9BC828
+            { util::ModuleIndex::Main, 0x9E3350, "patch_cheat_instant_portal_01_movz" },   // was 0x9E3250
+            { util::ModuleIndex::Main, 0xA26FC0, "sym_XVarBool_Set" },   // was 0xA26EC0
+            { util::ModuleIndex::Main, 0xA27060, "sym_XVarBool_ToString" },   // was 0xA26F60
+            { util::ModuleIndex::Main, 0xA273C0, "sym_XVarUint32_Set" },   // was 0xA272C0
+            { util::ModuleIndex::Main, 0xA27460, "sym_XVarUint32_ToString" },   // was 0xA27360
+            { util::ModuleIndex::Main, 0xA27B50, "sym_XVarFloat_Set" },   // was 0xA27A50
+            { util::ModuleIndex::Main, 0xA27E30, "sym_XVarString_Set" },   // was 0xA27D30
+            { util::ModuleIndex::Main, 0xA2AD60, "sym_print_error_display" },   // was 0xA2AC60
+            { util::ModuleIndex::Main, 0xA2AD70, "hook_print_error" },   // was 0xA2AC70
+            { util::ModuleIndex::Main, 0xA2AD70, "sym_print_error" },   // was 0xA2AC70
+            { util::ModuleIndex::Main, 0xA2AE04, "patch_cheat_alloc_errors_01_movz" },   // was 0xA2AD04
+            { util::ModuleIndex::Main, 0xA2AF14, "hook_print_error_string" },   // was 0xA2AE14
+            { util::ModuleIndex::Main, 0xA2AF14, "sym_print_error_string" },   // was 0xA2AE14
+            { util::ModuleIndex::Main, 0xA2AF74, "sym_print_error_string_final" },   // was 0xA2AE74
+            { util::ModuleIndex::Main, 0xA2BC40, "sym_ErrorManagerEnableLocalLogging" },   // was 0xA2BB40
+            { util::ModuleIndex::Main, 0xA2BC60, "sym_ErrorManagerSetLogStreamDirectory" },   // was 0xA2BB60
+            { util::ModuleIndex::Main, 0xA2BC80, "sym_ErrorManagerSetLogStreamFilename" },   // was 0xA2BB80
+            { util::ModuleIndex::Main, 0xA2BCE0, "sym_ErrorManagerLogToStream" },   // was 0xA2BBE0
+            { util::ModuleIndex::Main, 0xA2C020, "sym_TraceInternal_Log" },   // was 0xA2BF20
+            { util::ModuleIndex::Main, 0xA2C7B0, "patch_log_ringbuffer_01_ret" },   // was 0xA2C6B0
+            { util::ModuleIndex::Main, 0xA2C920, "sym_FileReadIntoMemory" },   // was 0xA2C820
+            { util::ModuleIndex::Main, 0xA2CB50, "sym_FileReferenceInit" },   // was 0xA2CA50
+            { util::ModuleIndex::Main, 0xA2D130, "sym_FileCreate" },   // was 0xA2D030
+            { util::ModuleIndex::Main, 0xA2D1F0, "sym_FileExists" },   // was 0xA2D0F0
+            { util::ModuleIndex::Main, 0xA2D200, "sym_FileOpen" },   // was 0xA2D100
+            { util::ModuleIndex::Main, 0xA2D2D0, "sym_FileClose" },   // was 0xA2D1D0
+            { util::ModuleIndex::Main, 0xA2D370, "sym_FileWrite" },   // was 0xA2D270
+            { util::ModuleIndex::Main, 0xA36B50, "sym_sigma_memory_init" },   // was 0xA36A50
+            { util::ModuleIndex::Main, 0xA36E20, "sym_SigmaMemoryNew" },   // was 0xA36D20
+            { util::ModuleIndex::Main, 0xA36F70, "sym_SigmaMemoryFree" },   // was 0xA36E70
+            { util::ModuleIndex::Main, 0xA37120, "sym_SigmaMemoryMove" },   // was 0xA37020
+            { util::ModuleIndex::Main, 0xA37180, "sym_op_delete_1" },   // was 0xA37080
+            { util::ModuleIndex::Main, 0xA371B0, "sym_op_delete_2" },   // was 0xA370B0
+            { util::ModuleIndex::Main, 0xA37D70, "patch_cheat_alloc_errors_02_bytes" },   // was 0xA37C70
+            { util::ModuleIndex::Main, 0xA48790, "sym_CRefString_ctor_default" },   // was 0xA48690
+            { util::ModuleIndex::Main, 0xA487B0, "sym_CRefString_ctor_int" },   // was 0xA486B0
+            { util::ModuleIndex::Main, 0xA487D0, "sym_CRefString_ctor_cref" },   // was 0xA486D0
+            { util::ModuleIndex::Main, 0xA48800, "sym_CRefString_ctor_lpcstr" },   // was 0xA48700
+            { util::ModuleIndex::Main, 0xA48890, "sym_CRefString_CommonCtorBody" },   // was 0xA48790
+            { util::ModuleIndex::Main, 0xA489B0, "sym_CRefString_ReAllocate" },   // was 0xA488B0
+            { util::ModuleIndex::Main, 0xA48BB0, "sym_CRefString_Free" },   // was 0xA48AB0
+            { util::ModuleIndex::Main, 0xA48D80, "sym_CRefString_Allocate" },   // was 0xA48C80
+            { util::ModuleIndex::Main, 0xA48F10, "sym_CRefString_dtor" },   // was 0xA48E10
+            { util::ModuleIndex::Main, 0xA491A0, "sym_CRefString_op_eq_cref" },   // was 0xA490A0
+            { util::ModuleIndex::Main, 0xA49200, "sym_CRefString_op_eq_cref_assign" },   // was 0xA49100
+            { util::ModuleIndex::Main, 0xA492D0, "sym_CRefString_op_eq_lpcstr" },   // was 0xA491D0
+            { util::ModuleIndex::Main, 0xA493C0, "sym_CRefString_op_add_eq_lpcstr" },   // was 0xA492C0
+            { util::ModuleIndex::Main, 0xA49470, "sym_CRefString_Append" },   // was 0xA49370
+            { util::ModuleIndex::Main, 0xA4A370, "sym_XLocaleToString" },   // was 0xA4A270
+            { util::ModuleIndex::Main, 0xBB2C50, "sym_ParsePartialFromString" },   // was 0xBB2B50
+            { util::ModuleIndex::Main, 0xBD6210, "sym_bdMemory_set_allocate" },   // was 0xBD6110
+            { util::ModuleIndex::Main, 0xBD6220, "sym_bdMemory_set_deallocate" },   // was 0xBD6120
+            { util::ModuleIndex::Main, 0xBD6230, "sym_bdMemory_set_reallocate" },   // was 0xBD6130
+            { util::ModuleIndex::Main, 0xBD6240, "sym_bdMemory_set_aligned_allocate" },   // was 0xBD6140
+            { util::ModuleIndex::Main, 0xBD6250, "sym_bdMemory_set_aligned_deallocate" },   // was 0xBD6150
+            { util::ModuleIndex::Main, 0xBD6260, "sym_bdMemory_set_aligned_reallocate" },   // was 0xBD6160
+            { util::ModuleIndex::Main, 0xBFD9A0, "hook_debug_parse_file_00bfd8a0" },   // was 0xBFD8A0
+            { util::ModuleIndex::Main, 0xBFD9A0, "sym_parse_file" },   // was 0xBFD8A0
+            { util::ModuleIndex::Main, 0xC07800, "sym_bdLogSubscriber_publish" },   // was 0xC07700
+            { util::ModuleIndex::Main, 0xC22A30, "sym_bdMemory_calloc" },   // was 0xC22930
+            { util::ModuleIndex::Main, 0xC593D4, "hook_debug_curl_data_00c592d4" },   // was 0xC592D4
+            { util::ModuleIndex::Main, 0xE46244, "data_release_fps_format_rw" },   // was 0xE46144
+            { util::ModuleIndex::Main, 0xE6DAE4, "data_build_locker_format_rw" },   // was 0xE6D9E4
+            { util::ModuleIndex::Main, 0x1098758, "data_release_fps_pos_x_ro" },   // was 0x1098658
+            { util::ModuleIndex::Main, 0x109875C, "data_release_fps_pos_y_ro" },   // was 0x109865C
+            { util::ModuleIndex::Main, 0x114A6A0, "gb_dev_mem_mode_ptr" },   // was 0x114A5A0
+            { util::ModuleIndex::Main, 0x114A6A8, "system_allocator_ptr" },   // was 0x114A5A8
+            { util::ModuleIndex::Main, 0x114AD60, "xvar_season_num_ptr" },   // was 0x114AC60
+            { util::ModuleIndex::Main, 0x114AD68, "xvar_season_state_ptr" },   // was 0x114AC68
+            { util::ModuleIndex::Main, 0x114AD90, "lobby_services_ptr" },   // was 0x114AC90
+            { util::ModuleIndex::Main, 0x114ADB8, "event_buff_start" },   // was 0x114ACB8
+            { util::ModuleIndex::Main, 0x114ADC0, "event_buff_end" },   // was 0x114ACC0
+            { util::ModuleIndex::Main, 0x114ADD8, "event_enabled" },   // was 0x114ACD8
+            { util::ModuleIndex::Main, 0x114ADE8, "event_season_only" },   // was 0x114ACE8
+            { util::ModuleIndex::Main, 0x114AE48, "season_config_request_flag_ptr" },   // was 0x114AD48
+            { util::ModuleIndex::Main, 0x114AE50, "season_seasons_request_flag_ptr" },   // was 0x114AD50
+            { util::ModuleIndex::Main, 0x114AE68, "season_blacklist_request_flag_ptr" },   // was 0x114AD68
+            { util::ModuleIndex::Main, 0x114AF38, "event_egg_flag" },   // was 0x114AE38
+            { util::ModuleIndex::Main, 0x114CA68, "sigma_remote_heap_ptr_0" },   // was 0x114C968
+            { util::ModuleIndex::Main, 0x114CA70, "gfx_nvn_globals_ptr" },   // was 0x114C970
+            { util::ModuleIndex::Main, 0x114CA90, "nx64_nvn_heap_ptr" },   // was 0x114C990
+            { util::ModuleIndex::Main, 0x114CA98, "nx64_nvn_heap_ptr_alias" },   // was 0x114C998
+            { util::ModuleIndex::Main, 0x114CAA0, "sigma_remote_heap_ptr_1" },   // was 0x114C9A0
+            { util::ModuleIndex::Main, 0x1150F08, "sigma_heap_limit_ptr" },   // was 0x1150E08
+            { util::ModuleIndex::Main, 0x1150F10, "sigma_heap_ptr_0" },   // was 0x1150E10
+            { util::ModuleIndex::Main, 0x1152DC8, "event_egg_xvar" },   // was 0x1152CC8
+            { util::ModuleIndex::Main, 0x1154C68, "item_invalid" },   // was 0x1154B68
+            { util::ModuleIndex::Main, 0x1154CF0, "event_igr" },   // was 0x1154BF0
+            { util::ModuleIndex::Main, 0x1154D00, "event_ann" },   // was 0x1154C00
+            { util::ModuleIndex::Main, 0x11552D0, "xvar_max_paragon_level_ptr" },   // was 0x11551D0
+            { util::ModuleIndex::Main, 0x11573D0, "sigma_virtual_heap_ptr" },   // was 0x11572D0
+            { util::ModuleIndex::Main, 0x11590B0, "xvar_online_service_ptr" },   // was 0x1158FB0
+            { util::ModuleIndex::Main, 0x11590D0, "xvar_free_to_play_ptr" },   // was 0x1158FD0
+            { util::ModuleIndex::Main, 0x11590D8, "xvar_challengerift_enabled_ptr" },   // was 0x1158FD8
+            { util::ModuleIndex::Main, 0x11591D8, "xvar_seasons_override_enabled_ptr" },   // was 0x11590D8
+            { util::ModuleIndex::Main, 0x11598C8, "xvar_experimental_scheduling_ptr" },   // was 0x11597C8
+            { util::ModuleIndex::Main, 0x1159908, "xvar_broadcast_ptr" },   // was 0x1159808
+            { util::ModuleIndex::Main, 0x115A508, "xvar_local_logging_enable_ptr" },   // was 0x115A408
+            { util::ModuleIndex::Main, 0x115A660, "sigma_local_heap_ptr" },   // was 0x115A560
+            { util::ModuleIndex::Main, 0x17DE710, "main_rwindow" },   // was 0x17DE610
+            { util::ModuleIndex::Main, 0x1831068, "gfx_internal_data_ptr" },   // was 0x1830F68
+            { util::ModuleIndex::Main, 0x18FF948, "event_nesting_portals" },   // was 0x18FF848
+            { util::ModuleIndex::Main, 0x19000C8, "event_double_keystones" },   // was 0x18FFFC8
+            { util::ModuleIndex::Main, 0x1900180, "event_double_blood_shards" },   // was 0x1900080
+            { util::ModuleIndex::Main, 0x1900238, "event_double_goblins" },   // was 0x1900138
+            { util::ModuleIndex::Main, 0x19002F0, "event_double_bounty_bags" },   // was 0x19001F0
+            { util::ModuleIndex::Main, 0x19003A8, "event_royal_grandeur" },   // was 0x19002A8
+            { util::ModuleIndex::Main, 0x1900460, "event_legacy_of_nightmares" },   // was 0x1900360
+            { util::ModuleIndex::Main, 0x1900518, "event_triunes_will" },   // was 0x1900418
+            { util::ModuleIndex::Main, 0x19005D0, "event_pandemonium" },   // was 0x19004D0
+            { util::ModuleIndex::Main, 0x1900688, "event_kanai_powers" },   // was 0x1900588
+            { util::ModuleIndex::Main, 0x1900740, "event_trials_of_tempests" },   // was 0x1900640
+            { util::ModuleIndex::Main, 0x19007F8, "event_shadow_clones" },   // was 0x19006F8
+            { util::ModuleIndex::Main, 0x19008B0, "event_fourth_cube_slot" },   // was 0x19007B0
+            { util::ModuleIndex::Main, 0x1900968, "event_ethereal_items" },   // was 0x1900868
+            { util::ModuleIndex::Main, 0x1900A20, "event_soul_shards" },   // was 0x1900920
+            { util::ModuleIndex::Main, 0x1900AD8, "event_swarm_rifts" },   // was 0x19009D8
+            { util::ModuleIndex::Main, 0x1900B90, "event_sanctified_items" },   // was 0x1900A90
+            { util::ModuleIndex::Main, 0x1900C48, "event_dark_alchemy" },   // was 0x1900B48
+            { util::ModuleIndex::Main, 0x1900D00, "event_paragon_cap" },   // was 0x1900C00
+            { util::ModuleIndex::Main, 0x1905710, "app_globals" },   // was 0x1905610
+            { util::ModuleIndex::Main, 0x191CB70, "sigma_thread_data" },   // was 0x191CA70
+            { util::ModuleIndex::Main, 0x191EBD8, "attrib_defs" },   // was 0x191EAD8
+            { util::ModuleIndex::Main, 0x1A39DF0, "world_place_null" },   // was 0x1A39CF0
+            { util::ModuleIndex::Main, 0x1A483C8, "local_logging_state_ptr" },   // was 0x1A482C8
+            { util::ModuleIndex::Main, 0x1A50790, "sigma_heap_block_0" },   // was 0x1A50690
+            { util::ModuleIndex::Main, 0x1A50798, "sigma_virtual_heap_block" },   // was 0x1A50698
+            { util::ModuleIndex::Main, 0x1A507A0, "sigma_remote_addr_0" },   // was 0x1A506A0
+            { util::ModuleIndex::Main, 0x1A507A8, "sigma_remote_heap_0" },   // was 0x1A506A8
+            { util::ModuleIndex::Main, 0x1A507B0, "sigma_remote_addr_1" },   // was 0x1A506B0
+            { util::ModuleIndex::Main, 0x1A507B8, "sigma_remote_heap_1" },   // was 0x1A506B8
+            { util::ModuleIndex::Main, 0x1A5F208, "refstring_data_buffer_nil" },   // was 0x1A5F108
+            { util::ModuleIndex::Main, 0x1A5F2B8, "sigma_globals" },   // was 0x1A5F1B8
+            { util::ModuleIndex::Main, 0x1A63DEC, "unicode_text_current_locale" },   // was 0x1A63CEC

@@ -1,0 +1,153 @@
+#include "program/gui2/ui/windows/notifications_window.hpp"
+
+#include <array>
+#include <algorithm>
+#include <cstdarg>
+#include <cstdio>
+
+#include "program/logging.hpp"
+
+namespace d3::gui2::ui::windows {
+    namespace {
+        NotificationsWindow *g_key_event_window = nullptr;
+
+        auto KeyEventColor(exl::log::KeyEventLevel level) -> ImVec4 {
+            switch (level) {
+            case exl::log::KeyEventLevel::Warning:
+                return ImVec4(1.0f, 0.75f, 0.2f, 1.0f);
+            case exl::log::KeyEventLevel::Error:
+                return ImVec4(1.0f, 0.3f, 0.3f, 1.0f);
+            case exl::log::KeyEventLevel::Info:
+            default:
+                return ImVec4(0.3f, 1.0f, 0.3f, 1.0f);
+            }
+        }
+
+        auto KeyEventTtl(exl::log::KeyEventLevel level) -> float {
+            switch (level) {
+            case exl::log::KeyEventLevel::Error:
+                return 10.0f;
+            case exl::log::KeyEventLevel::Warning:
+                return 8.0f;
+            case exl::log::KeyEventLevel::Info:
+            default:
+                return 6.0f;
+            }
+        }
+
+        void HandleKeyEvent(exl::log::KeyEventLevel level, std::string_view message) {
+            if (g_key_event_window == nullptr || message.empty()) {
+                return;
+            }
+            g_key_event_window->AddNotificationText(KeyEventColor(level), KeyEventTtl(level), message);
+        }
+    }  // namespace
+
+    NotificationsWindow::NotificationsWindow() :
+        Window("Notifications", false) {
+        SetFlags(ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoDocking | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoNavFocus | ImGuiWindowFlags_NoBringToFrontOnFocus | ImGuiWindowFlags_NoFocusOnAppearing | ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoInputs);
+
+        g_key_event_window = this;
+        exl::log::SetKeyEventSink(&HandleKeyEvent);
+    }
+
+    NotificationsWindow::~NotificationsWindow() {
+        if (g_key_event_window == this) {
+            g_key_event_window = nullptr;
+            exl::log::SetKeyEventSink(nullptr);
+        }
+    }
+
+    void NotificationsWindow::SetViewportSize(ImVec2 viewport_size) {
+        viewport_size_ = viewport_size;
+    }
+
+    void NotificationsWindow::Update(float dt_s) {
+        if (notifications_.empty()) {
+            SetOpen(pinned_open_);
+            return;
+        }
+
+        for (auto &n : notifications_) {
+            n.ttl_s -= dt_s;
+        }
+
+        auto removed = std::ranges::remove_if(notifications_, [](const Notification &n) -> bool { return n.ttl_s <= 0.0f; });
+        notifications_.erase(removed.begin(), removed.end());
+
+        SetOpen(pinned_open_ || !notifications_.empty());
+    }
+
+    void NotificationsWindow::Clear() {
+        notifications_.clear();
+        SetOpen(pinned_open_);
+    }
+
+    void NotificationsWindow::AddNotification(const ImVec4 &color, float ttl_s, const char *fmt, ...) {
+        std::array<char, 512> buf {};
+
+        va_list vl;
+        va_start(vl, fmt);
+        vsnprintf(buf.data(), buf.size(), fmt, vl);
+        va_end(vl);
+
+        buf.back() = '\0';
+
+        Notification n {};
+        n.text          = buf.data();
+        n.color         = color;
+        n.ttl_s         = ttl_s;
+        n.ttl_initial_s = ttl_s;
+        notifications_.push_back(std::move(n));
+        SetOpen(true);
+    }
+
+    void NotificationsWindow::AddNotificationText(const ImVec4 &color, float ttl_s, std::string_view text) {
+        Notification n {};
+        n.text          = std::string(text);
+        n.color         = color;
+        n.ttl_s         = ttl_s;
+        n.ttl_initial_s = ttl_s;
+        notifications_.push_back(std::move(n));
+        SetOpen(true);
+    }
+
+    void NotificationsWindow::SetPinnedOpen(bool pinned) {
+        pinned_open_ = pinned;
+        SetOpen(pinned_open_ || !notifications_.empty());
+    }
+
+    void NotificationsWindow::BeforeBegin() {
+        if (viewport_size_.x > 0.0f) {
+            const float bar_h = ImGui::GetFrameHeightWithSpacing();
+            const float top   = 20.0f + bar_h;
+            ImGui::SetNextWindowPos(ImVec2(viewport_size_.x - 20.0f, top), ImGuiCond_Always, ImVec2(1.0f, 0.0f));
+        }
+        ImGui::SetNextWindowBgAlpha(0.35f);
+    }
+
+    void NotificationsWindow::RenderContents() {
+        if (notifications_.empty()) {
+            if (pinned_open_) {
+                ImGui::TextUnformatted("No notifications.");
+            }
+            return;
+        }
+
+        ImGui::PushTextWrapPos(ImGui::GetCursorPos().x + 340.0f);
+
+        for (const auto &n : notifications_) {
+            float fade = 1.0f;
+            if (n.ttl_s < 0.5f) {
+                fade = std::max(0.0f, n.ttl_s / 0.5f);
+            }
+
+            ImVec4 c = n.color;
+            c.w *= fade;
+            ImGui::TextColored(c, "%s", n.text.c_str());
+        }
+
+        ImGui::PopTextWrapPos();
+    }
+
+}  // namespace d3::gui2::ui::windows

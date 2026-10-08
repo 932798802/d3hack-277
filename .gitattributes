@@ -1,0 +1,28 @@
+# 统一行为：默认按内容自动判断，文本文件统一以 LF 存储
+* text=auto
+
+# 这些文件里换行符有语法意义 / 会被 shell 直接执行，必须锁 LF，否则在
+# msys2 bash 里会出现 "bad interpreter: /usr/bin/env bash^M"
+*.sh    text eol=lf
+*.py    text eol=lf
+*.toml  text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.inl   text eol=lf
+*.hpp   text eol=lf
+*.cpp   text eol=lf
+*.cmake text eol=lf
+*.inc   text eol=lf
+
+# Windows 批处理反过来必须 CRLF
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# 二进制：不做任何转换
+*.zip   binary
+*.nso   binary
+*.npdm  binary
+*.bin   binary
+*.dat   binary
+*.jpg   binary
+*.png   binary

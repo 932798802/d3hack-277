@@ -1,0 +1,27 @@
+---
+If:
+  PathMatch: [(.*d3hack\/)?source\/program\/.*\.(h|c)(pp)?]
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+    - -Wno-unknown-pragmas # ignore GCC-specific pragmas
+    - -ferror-limit=0 # debug clangd failures without it stopping
+    - -include
+    - clangd_compat.hpp
+    # - -fgnuc-version=15.2.0
+    # - -stdlib=libstdc++
+    # - -std=gnu++23
+  Remove:
+    - -Werror
+    # - -include
+    - -mword-relocations
+    - -Ofast
+    - -mtp=soft
+Diagnostics:
+  MissingIncludes: None
+  UnusedIncludes: None
+  Includes:
+    AnalyzeAngledIncludes: No
+  ClangTidy:
+    FastCheckFilter: Loose
+    Remove: [readability*, bugprone-dynamic-static-initializers]

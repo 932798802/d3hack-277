@@ -1,0 +1,388 @@
+[gui]
+# Language
+language = "语言"
+# Auto (game)
+lang_auto = "自动(游戏)"
+# English
+lang_en = "英语"
+# Deutsch
+lang_de = "德语"
+# Francais
+lang_fr = "法语"
+# Espanol
+lang_es = "西班牙语"
+# Italiano
+lang_it = "意大利语"
+# Japanese
+lang_ja = "日语"
+# Korean
+lang_ko = "韩语"
+# Chinese
+lang_zh = "中文"
+# Enabled (persist)
+enabled_persist = "启用(保存)"
+# Visible (persist)
+visible_persist = "显示(保存)"
+# Allow left stick passthrough
+left_stick_passthrough = "允许左摇杆透传"
+
+# Hold + and - (0.5s) to toggle overlay visibility.
+hotkey_toggle = "快捷键: 同时按住 + 和 - (0.5秒) 切换显示."
+# Config not loaded yet.
+config_not_loaded = "配置尚未加载."
+# UI state: UNSAVED changes
+ui_state_dirty = "UI 状态: 有未保存的更改"
+# UI state: clean
+ui_state_clean = "UI 状态: 无未保存的更改"
+# Reset UI to current config
+reset_ui = "撤销更改"
+# GUI enabled
+gui_enabled = "启用 GUI"
+# Apply
+apply = "应用"
+# Save
+save = "保存"
+# Reload
+reload = "重新加载"
+# Restart required for some changes.
+restart_required_banner = "部分更改需要重启后生效."
+# Disable visible
+bulk_disable_visible = "禁用可见项"
+# Enable visible
+bulk_enable_visible = "启用可见项"
+# Reset visible
+bulk_reset_visible = "重置可见项"
+# Cheats group: core
+cheats_group_core = "核心"
+# Cheats group: toggles
+cheats_group_toggles = "开关"
+# Events group: core
+events_group_core = "核心"
+# Events group: toggles
+events_group_toggles = "开关"
+# Filter: cheats
+filter_cheats = "作弊"
+# Filter: empty result
+filter_empty = "没有项目匹配此筛选器."
+# Filter: events
+filter_events = "活动"
+# Filter: loot
+filter_loot = "战利品"
+# Filter active indicator
+filter_active = "筛选器已激活"
+# Clear filter action
+filter_clear = "清除筛选器"
+# Clear language override
+language_clear = "清除覆盖"
+# Current language label
+language_current = "当前: %s"
+# Edit language override
+language_edit = "编辑"
+# Edit language override title
+language_edit_title = "编辑语言覆盖"
+# Loot group: core
+loot_group_core = "核心"
+# Loot group: overrides
+loot_group_overrides = "覆盖"
+# Loot group: toggles
+loot_group_toggles = "开关"
+# Restart marker legend
+restart_marker_legend = "* 需要重启"
+# Restart marker short
+restart_marker_short = "*"
+# Restart required banner note
+restart_required_banner_note = "标有 * 的字段需要重启."
+# Language updated. Restart to fully apply new glyphs.
+lang_restart_banner = "语言已更新。需要重启才能完全应用新字形。"
+# Language updated. Restart to fully apply new glyphs.
+notify_lang_restart = "语言已更新。需要重启才能完全应用新字形。"
+# GUI is disabled (proof-of-life stays on). Enable GUI to edit config.
+disabled_help = "GUI 已禁用(仍显示指示). 启用 GUI 以编辑配置."
+# Config source: %s
+config_source = "配置来源: %s"
+# built-in defaults
+config_source_defaults = "内置默认值"
+# Viewport: %.0fx%.0f | Crop: %dx%d | Swapchain: %d
+viewport_info = "视口: %.0fx%.0f | 裁剪: %dx%d | 交换链: %d"
+# runtime
+note_runtime = "运行时"
+# unknown
+error_unknown = "未知"
+# not found
+error_not_found = "未找到"
+# Applied. Restart required.
+notify_applied_restart = "已应用。需要重启。"
+# Applied (%s).
+notify_applied_note = "已应用(%s)。"
+# Applied.
+notify_applied = "已应用。"
+# Saved config.toml
+notify_saved = "已保存 config.toml"
+# Save failed: %s
+notify_save_failed = "保存失败: %s"
+# Reloaded config.toml
+notify_reloaded = "已重新加载 config.toml"
+# Reload failed: %s
+notify_reload_failed = "重新加载失败: %s"
+
+# Windows
+menu_windows = "窗口"
+# Show all
+menu_windows_show_all = "显示全部"
+# Hide all
+menu_windows_hide_all = "隐藏全部"
+# Tools
+menu_tools = "工具"
+# Open config
+tool_open_config = "打开设置"
+# Open notifications
+tool_open_notifications = "打开通知"
+# Clear notifications
+tool_clear_toasts = "清除通知"
+# Toggle GUI (hotkey or swipe)
+toast_toggle_hint = "按住 + 和 - 或从左边缘滑动以切换 GUI"
+# Save layout
+menu_save_layout = "保存布局"
+# Hide overlay
+menu_hide_overlay = "隐藏叠加层"
+# Reset layout
+menu_reset_layout = "重置布局"
+# Theme
+menu_theme = "主题"
+# Help
+menu_help = "帮助"
+
+# Overlays
+tab_overlays = "叠加层"
+# GUI
+tab_gui = "GUI"
+# Resolution
+tab_resolution = "ResHack"
+# Seasons
+tab_seasons = "赛季"
+# Events
+tab_events = "活动"
+# Rare cheats
+tab_rare_cheats = "作弊"
+# Challenge rifts
+tab_challenge_rifts = "秘境"
+# Loot
+tab_loot = "战利品"
+# Debug
+tab_debug = "调试"
+
+# Enabled##overlays
+overlays_enabled = "启用##overlays"
+# Build locker watermark
+overlays_buildlocker = "构建锁定水印"
+# DDM labels
+overlays_ddm = "DDM 标签"
+# FPS label
+overlays_fps = "FPS 标签"
+# Variable resolution label
+overlays_var_res = "可变分辨率标签"
+
+# Enabled##res
+resolution_enabled = "启用##res"
+# Output target (vertical)
+resolution_output_target = "输出目标(垂直)"
+# Spoof docked
+resolution_spoof_docked = "伪装底座模式"
+# Handheld output scale auto
+resolution_output_handheld_auto = "掌机输出缩放: 自动(原始)"
+# Handheld output scale
+resolution_output_handheld_scale = "掌机输出缩放(%)"
+# Handheld output target (vertical)
+resolution_output_target_handheld = "掌机输出目标(垂直)"
+# Minimum resolution scale
+resolution_min_scale = "最小分辨率缩放"
+# Maximum resolution scale
+resolution_max_scale = "最大分辨率缩放"
+# Clamp texture height (0=off, 100-9999)
+resolution_clamp_texture = "纹理限制高度(0=关闭)"
+# Experimental scheduler
+resolution_exp_scheduler = "实验性调度器"
+# Output size: %ux%u
+resolution_output_size = "输出尺寸: %ux%u"
+# Display mode overrides
+resolution_extra_header = "显示模式覆盖"
+# Set to -1 to keep the game's value.
+resolution_extra_hint = "设为 -1 以保留游戏原值."
+# MSAA level (-1=default)
+resolution_extra_msaa = "MSAA 等级(-1=默认)"
+# Bit depth (-1=default)
+resolution_extra_bit_depth = "位深(-1=默认)"
+# Refresh rate (-1=default)
+resolution_extra_refresh = "刷新率(-1=默认)"
+# Window left (-1=default)
+resolution_extra_win_left = "窗口左侧(-1=默认)"
+# Window top (-1=default)
+resolution_extra_win_top = "窗口顶部(-1=默认)"
+# Window width (-1=default)
+resolution_extra_win_width = "窗口宽度(-1=默认)"
+# Window height (-1=default)
+resolution_extra_win_height = "窗口高度(-1=默认)"
+# UI width (-1=default)
+resolution_extra_ui_width = "UI 宽度(-1=默认)"
+# UI height (-1=default)
+resolution_extra_ui_height = "UI 高度(-1=默认)"
+# Render width (-1=default)
+resolution_extra_render_width = "渲染宽度(-1=默认)"
+# Render height (-1=default)
+resolution_extra_render_height = "渲染高度(-1=默认)"
+
+# Enabled##seasons
+seasons_enabled = "启用##seasons"
+# Allow online play
+seasons_allow_online = "允许在线游戏"
+# Current season
+seasons_current = "当前赛季"
+# Spoof PTR flag
+seasons_spoof_ptr = "伪造 PTR 标志"
+
+# Enabled##events
+events_enabled = "启用##events"
+# Season map mode
+events_season_map_mode = "赛季映射模式"
+# MapOnly
+events_mode_map_only = "仅映射"
+# OverlayConfig
+events_mode_overlay = "叠加配置"
+# Disabled
+events_mode_disabled = "禁用"
+# IGR enabled
+events_igr = "IGR 启用"
+# Anniversary enabled
+events_anniversary = "周年庆启用"
+# Easter egg world enabled
+events_easter_egg_world = "彩蛋世界启用"
+# Double rift keystones
+events_double_keystones = "双倍秘境钥匙"
+# Double blood shards
+events_double_blood_shards = "双倍血岩碎片"
+# Double treasure goblins
+events_double_goblins = "双倍哥布林"
+# Double bounty bags
+events_double_bounty_bags = "双倍悬赏宝箱"
+# Royal Grandeur
+events_royal_grandeur = "皇家华戒"
+# Legacy of Nightmares
+events_legacy_of_nightmares = "梦魇者的遗礼"
+# Triune's Will
+events_triunes_will = "三神教的意志"
+# Pandemonium
+events_pandemonium = "永恒之战(混沌魔域)"
+# Kanai powers
+events_kanai_powers = "禁忌档案室(威能混搭)"
+# Trials of Tempests
+events_trials_of_tempests = "风暴试炼"
+# Shadow clones
+events_shadow_clones = "奈非天之影(暗影分身)"
+# Fourth Kanai's Cube slot
+events_fourth_kanais = "第四个魔盒栏位"
+# Ethereal items
+events_ethereal_items = "无形之忆(无形物品)"
+# Soul shards
+events_soul_shards = "地狱魔王(灵魂碎片)"
+# Swarm rifts
+events_swarm_rifts = "回响梦魇"
+# Sanctified items
+events_sanctified_items = "光明的呼唤(圣化物品)"
+# Dark Alchemy
+events_dark_alchemy = "仪式祭坛"
+# Nesting portals
+events_nesting_portals = "仇敌幻象"
+
+# Enabled##rare_cheats
+rare_cheats_enabled = "启用##rare_cheats"
+# Move speed multiplier
+rare_cheats_move_speed = "移动速度倍数"
+# Attack speed multiplier
+rare_cheats_attack_speed = "攻击速度倍数"
+# Floating damage color
+rare_cheats_floating_damage = "浮动伤害颜色"
+# Guaranteed legendaries
+rare_cheats_guaranteed_legendaries = "必出传奇"
+# Drop anything
+rare_cheats_drop_anything = "允许掉落所有物品"
+# Instant portal
+rare_cheats_instant_portal = "瞬间传送门"
+# No cooldowns
+rare_cheats_no_cooldowns = "无冷却"
+# Instant craft actions
+rare_cheats_instant_craft = "瞬间制作/合成"
+# Any gem any slot
+rare_cheats_any_gem_any_slot = "任意宝石任意插槽"
+# Auto pickup
+rare_cheats_auto_pickup = "自动拾取"
+# Equip any slot
+rare_cheats_equip_any_slot = "任意槽位装备"
+# Unlock all difficulties
+rare_cheats_unlock_all_difficulties = "解锁所有难度"
+# Easy kill damage
+rare_cheats_easy_kill = "秒杀伤害"
+# Cube no consume
+rare_cheats_cube_no_consume = "魔盒不消耗材料"
+# Gem upgrade always
+rare_cheats_gem_upgrade_always = "宝石升级必成功"
+# Gem upgrade speed
+rare_cheats_gem_upgrade_speed = "宝石升级加速"
+# Gem upgrade lvl150
+rare_cheats_gem_upgrade_lvl150 = "宝石升级至 150"
+# Equip multi legendary
+rare_cheats_equip_multi_legendary = "可装备多个传奇"
+# Super god mode
+rare_cheats_super_god_mode = "超级神模式"
+# Extra GR orbs on elite kill
+rare_cheats_extra_gr_orbs_elites = "击杀精英时额外GR宝珠"
+
+# Enabled##cr
+challenge_rifts_enabled = "挑战秘境##cr"
+# Randomize within range
+challenge_rifts_random = "范围内随机"
+# Range start
+challenge_rifts_range_start = "范围起始"
+# Range end
+challenge_rifts_range_end = "范围结束"
+
+# Enabled##loot
+loot_enabled = "启用##loot"
+# Disable ancient drops
+loot_disable_ancient = "禁用远古掉落"
+# Disable primal ancient drops
+loot_disable_primal = "禁用原始远古掉落"
+# Disable torment drops
+loot_disable_torment = "禁用折磨掉落"
+# Disable torment check
+loot_disable_torment_check = "跳过折磨检查"
+# Suppress gift generation
+loot_suppress_gift = "抑制礼物生成"
+# Forced iLevel
+loot_forced_ilevel = "强制物品等级"
+# Tiered loot run level
+loot_tiered_run_level = "分级战利品运行等级"
+# Ancient rank
+loot_ancient_rank = "远古等级"
+# Normal
+loot_rank_normal = "普通"
+# Ancient
+loot_rank_ancient = "远古"
+# Primal
+loot_rank_primal = "原始"
+
+# Enabled##debug
+debug_enabled = "启用##debug"
+# Enable crashes (danger)
+debug_enable_crashes = "启用崩溃(危险)"
+# Enable pubfile dump
+debug_pubfile_dump = "启用 pub 文件转储"
+# Enable error traces
+debug_error_traces = "启用错误追踪"
+# Enable debug flags
+debug_debug_flags = "启用调试标志"
+# Spoof network functions
+debug_spoof_network = "伪装网络功能"
+# Show ImGui demo window (not linked)
+debug_show_demo = "显示 ImGui 演示窗口(未链接)"
+# Show ImGui metrics
+debug_show_metrics = "显示 ImGui 指标"

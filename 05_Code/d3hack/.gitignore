@@ -1,0 +1,25 @@
+.vscode/*
+build/*
+out/*
+deploy/*
+Starlight/
+
+*.elf
+*.nso
+*.npdm
+
+.DS_Store
+.editorconfig
+*.code-workspace
+.worktrees/
+.*/
+*.zip
+compile_commands.json
+config.mk
+config.cmake
+
+# Local-only convenience symlink to the Ryujinx log filter script.
+misc/scripts/ryu_filter_logs.py
+**/__pycache__/
+*.pyc
+find_all_symbols_db*yaml

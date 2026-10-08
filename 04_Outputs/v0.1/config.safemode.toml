@@ -1,0 +1,131 @@
+# d3hack "safe mode" configuration -- for bisecting a crash / misbehaviour
+# on Diablo III 2.7.7.92380 (Switch, TitleID 01001B300B9BE000).
+#
+# How to use:
+#   1. copy this file over  SD:/config/d3hack-nx/config.toml
+#   2. boot the game. Everything except the overlay UI is switched off.
+#   3. if it works, switch feature groups back on ONE AT A TIME (easiest from the
+#      in-game overlay: hold "+" and "-" together for 0.5 s) and note which group
+#      brings the problem back.
+#
+# The mod's own exception handler is ENABLED here: if the game dies it drops
+# sd:/config/d3hack-nx/user_exception.txt + error_manager_dump.txt, which tells
+# us exactly where the fault is. That file is what we need next.
+
+[resolution_hack]
+# OFF first: this is the most invasive runtime piece (NVN texture hooks +
+# texture clamping + a 1080p render target). Turn it back on last.
+SectionEnabled = false
+OutputTarget = 1080
+OutputHandheldScale = 85
+SpoofDocked = false
+MinResScale = 80
+MaxResScale = 100
+ExperimentalScheduler = false
+
+[resolution_hack.extra]
+WindowLeft = -1
+WindowTop = -1
+WindowWidth = -1
+WindowHeight = -1
+UIOptWidth = -1
+UIOptHeight = -1
+RenderWidth = -1
+RenderHeight = -1
+RefreshRate = -1
+BitDepth = -1
+MSAALevel = -1
+
+[seasons]
+SectionEnabled = false
+AllowOnlinePlay = false
+SeasonNumber = 37
+SpoofPtr = false
+
+[challenge_rifts]
+SectionEnabled = false
+MakeRiftsRandom = true
+RiftRangeStart = 0
+RiftRangeEnd = 28
+
+[events]
+SectionEnabled = false
+SeasonMapMode = "Disabled"
+IgrEnabled = false
+AnniversaryEnabled = false
+EasterEggWorldEnabled = false
+DoubleRiftKeystones = false
+DoubleBloodShards = false
+DoubleTreasureGoblins = false
+DoubleBountyBags = false
+RoyalGrandeur = false
+LegacyOfNightmares = false
+TriunesWill = false
+Pandemonium = false
+KanaiPowers = false
+TrialsOfTempests = false
+ShadowClones = false
+FourthKanaisCubeSlot = false
+EtherealItems = false
+SoulShards = false
+SwarmRifts = false
+SanctifiedItems = false
+DarkAlchemy = false
+NestingPortals = false
+
+[rare_cheats]
+SectionEnabled = false
+SuperGodMode = false
+InfiniteMP = false
+ExtraGreaterRiftOrbsOnEliteKill = false
+MovementSpeedMultiplier = 1.0
+AttackSpeedMultiplier = 1.0
+FloatingDamageColor = false
+GuaranteedLegendaryChance = false
+DropAnyItems = false
+InstantPortalAndBookOfCain = false
+NoCooldowns = false
+InstantCubeAndCraftsAndEnchants = false
+SocketGemsToAnySlot = false
+AutoPickup = false
+EquipAnySlot = false
+UnlockAllDifficulties = false
+EasyKillDamage = false
+CubeNoConsumeMaterials = false
+LegendaryGemUpgradeAlways = false
+LegendaryGemUpgradeSpeed = false
+LegendaryGemLevel150 = false
+EquipMultipleLegendaries = false
+
+[overlays]
+SectionEnabled = false
+BuildLockerWatermark = false
+FPSLabel = false
+VariableResLabel = false
+DDMLabels = false
+
+[loot_modifiers]
+SectionEnabled = false
+DisableAncientDrops = false
+DisablePrimalAncientDrops = false
+DisableTormentDrops = false
+DisableTormentCheck = false
+SuppressGiftGeneration = false
+ForcedILevel = 0
+TieredLootRunLevel = 0
+AncientRank = "Normal"
+
+[debug]
+SectionEnabled = false
+EnablePubFileDump = false
+EnableErrorTraces = false
+EnableDebugFlags = false
+SpoofNetworkFunctions = false
+# KEEP THIS ON: it is the only thing that will tell us *where* a crash happens.
+EnableExceptionHandler = true
+
+[gui]
+Enabled = true
+Visible = false
+AllowLeftStickPassthrough = true
+Language = ""

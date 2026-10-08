@@ -1,0 +1,57 @@
+# ============================================================================
+#  ⚠️ 绝不入库的东西
+# ============================================================================
+
+# ---- 游戏本体相关内容（本仓库只放"偏移/工具/文档"，不放内容）----
+# 10_Other/cache/work = 从 XCI 解出的 exefs / text / rodata / data 等
+10_Other/cache/work/
+*.xci
+*.nsp
+*.nca
+*.kip
+*.kip1
+
+# ---- 密钥 / 设备证书：绝对禁止 ----
+**/prod.keys
+**/title.keys
+**/*.keys
+**/*.pem
+**/*.p12
+
+# ---- 实机测试的原始数据（崩溃报告 / 内存转储 / 截图 / 游戏日志）----
+#     只有"结论"进 03_Documents/reports/，原始数据不入库
+01_Inputs/switch-test/*
+!01_Inputs/switch-test/README.md
+
+# ---- 构建产物与缓存 ----
+05_Code/d3hack/build/
+05_Code/d3hack/deploy/
+build/
+deploy/
+CMakeCache.txt
+CMakeFiles/
+compile_commands.json
+
+# ---- 第三方依赖下载缓存（用 05_Code/scripts/fetch-deps.sh 重取，fixed commit 见脚本）----
+10_Other/cache/tmp/
+tmp_*.zip
+
+# ---- 内容提取 / 解密类工具：刻意不公开 ----
+# 它们需要 prod.keys 解密 NCA/XCI 并抽出游戏可执行文件；本仓库只发布
+# 「偏移分析 + 补丁验证」部分。详见 05_Code/tools/README.md。
+05_Code/tools/xci.py
+05_Code/tools/nca_xci.py
+05_Code/tools/dump_exefs.py
+05_Code/tools/probe_crypto.py
+05_Code/tools/scan_all_ncas.py
+
+# ---- 本机专用路径覆盖（模板 local.env.example 入库）----
+05_Code/scripts/local.env
+
+# ---- 编辑器/系统杂物 ----
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+*.swp
+*.bak
